@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.hero span {
+   color: #6366f1;
+}
+
+.hero p {
+  margin-top: 14px;
+  font-size: 17px;
+  color: #ccc;
+}
+/* SERVICE FLOW */
+.service-flow {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* space between boxes */
+}
+
+/* RECTANGLE BOX */
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 30px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.service-row:hover {
+  color: black;
+  background: #6366f1;
+  transform: translateY(-2px);
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.number {
+  font-size: 22px;
+  color: #6366f1;
+  opacity: 0.9;
+}
+
+.left h2 {
+  font-size: 22px;
+}
+
+/* RIGHT */
+.right {
+  max-width: 420px;
+}
+
+.right p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 15px;
+}

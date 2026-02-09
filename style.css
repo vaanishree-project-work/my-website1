@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+ background: #111;
+ 
+ z-index: 999;
+}
+
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+/* LOGO ROTATE + MOVE ANIMATION */
+
+
+.logo-wrap{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* ONLY logo animation */
+.logo-img{
+  width: 42px;
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Text fixed */
+.startup-name{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* floating animation */
+@keyframes float{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-6px); }
+  100%{ transform: translateY(0); }
+}
+
+/* keyframes */
+@keyframes logoFloatRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+.logo img:hover {
+  animation-play-state: paused;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #6366f1;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: black;
+  list-style: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* BUTTON */
+.open-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #6366f1;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.open-btn:hover {
+  background: #6366f1;
+  color: black;
+}
+
+
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 400;   /* 👈 bold remove */
+  color: #eaeaea;
+  max-width: 700px;
+  margin: 0 auto 30px auto;  /* 👈 perfect center align */
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+.btn{
+    padding: 12px 28px;
+    background:  #6366f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}

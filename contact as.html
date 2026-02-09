@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Code Singularity AI</title>
+  <link rel="stylesheet" href="contact as.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="contact as.js" defer></script>
+</head>
+<body>
+
+  <section class="contact-section">
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>Let start a conversation and build something impactful together.</p>
+    </div>
+
+    <div class="contact-container">
+
+      <!-- LEFT : CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+
+        <div class="info-item">
+          <i class="fas fa-location-dot"></i>
+          <span>Chennai, Tamil Nadu, India</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>codesingularityai@gmail.com</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 XXXXX XXXXX</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon – Fri : 9:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+
+      <!-- RIGHT : FORM -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+
+          <div class="input-group">
+            <input type="text" id="name" required>
+            <label>Your Name</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" required>
+            <label>Email Address</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="subject" required>
+            <label>Subject</label>
+          </div>
+
+          <div class="input-group">
+            <textarea id="message" required></textarea>
+            <label>Your Message</label>
+          </div>
+
+          <button type="submit">Send Message</button>
+          <p id="successMsg"></p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+</body>
+</html>
